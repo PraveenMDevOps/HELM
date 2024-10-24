@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{- "\n"}}, {{- "Hello team, we are learning-" }}, {{- "HELM" }}
+  {{- "Hello team, we are learning-" }}, {{- "HELM" }}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
