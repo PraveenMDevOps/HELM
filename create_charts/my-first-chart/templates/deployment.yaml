@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 {{- with .Values.customBlock.author.name }}
+author:
 {{- toYaml . | nindent 4}}
 {{- end }}
 metadata:
