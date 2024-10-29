@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 
+{{- if .Values.customBlock.author.name }}
 {{"Custom Value is True" | nindent 4 }}
 {{- end }}
 
