@@ -1,12 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-
-{{- if .Values.customBlock.author.name }}
-{{"Custom Value is True" | nindent 4 }}
-{{- else }}
-{{"Custom Value is False" | nindent 4 }}
+{{- with .Values.customBlock.author. name }}
+{{- toYaml . | nindent 4}}
 {{- end }}
-
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
