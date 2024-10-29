@@ -4,12 +4,7 @@
 
 customBlock:
   author:
-    name: 
-      - "Edward"
-      - "Peter"
-      - "Mark"
-      - "Juan"
-      - "Camela"
+    name: {}
 
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 3
