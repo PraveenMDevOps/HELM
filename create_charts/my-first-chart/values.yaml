@@ -4,7 +4,7 @@
 
 customBlock:
   author:
-    name: true
+    name: false
 #    name: "Praveen"
 #    address: "Street 5, 269, New York"
 
