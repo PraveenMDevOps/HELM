@@ -4,7 +4,7 @@ kind: Deployment
 {{- if .Values.customBlock.author.name }}
 {{"Custom Value is True" | nindent 4 }}
 {{- else }}
-{{"Custom Value is False"}}
+{{"Custom Value is False" | nindent 4 }}
 {{- end }}
 
 metadata:
