@@ -5,7 +5,7 @@ kind: Deployment
 #  {{ .Values.customBlock.author.address | default "Hi, I am not Null" | nindent 4}}
 #  {{ .Values.customBlock.author.address | default "Hi, I am not Null" | upper | nindent 6}}
 #  {{ .Values.customBlock.author.address | default "Hi, I am not Null" | upper | quote | nindent 8}}
-{{- if .VAlues.customBlock.author.name }}
+{{- if .Values.customBlock.author.name }}
 {{"Custom Value is True" | nindent 4 }}
 {{- end }}
 
