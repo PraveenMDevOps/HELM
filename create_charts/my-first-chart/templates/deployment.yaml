@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
-{{- with .Values.customBlock.author.name }}
-author:
-{{- toYaml . | nindent 4}}
+{{ $myVar := true}}
+{{- if $myVar }}
+{{ "Hi, I am with Variable True" | nindent 4 }}
 {{- else }}
-{{"Hi, I am without Block" | nindent 4 }}
+{{ "Hi, I am with Variable False" | nindent 4 }}
 {{- end }}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
