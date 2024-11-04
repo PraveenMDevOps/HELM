@@ -20,7 +20,7 @@ author:
 {{- end }}
 
 {{- range $key,$value := .Values.image }}
-  {{ $key }}:{{ $value }}
+  {{ $key }}: {{ $value }}
 {{- end }}
 
 metadata:
