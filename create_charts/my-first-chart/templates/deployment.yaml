@@ -14,8 +14,9 @@ author:
 # {{"I am without Block" | nindent 4 }}
 {{- end }}
 
-{{- range $key,$value := .Values.image }}
-  {{ $key }}: {{ $value }}
+author:
+{{- range .Values.customBlock.author.name }}
+  - {{ . }}
 {{- end }}
 
 metadata:
