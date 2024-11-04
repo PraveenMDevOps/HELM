@@ -14,8 +14,8 @@ author:
 # {{"I am without Block" | nindent 4 }}
 {{- end }}
 
-{{- range .Values.customBlock.author.name }}
 author:
+{{- range .Values.customBlock.author.name }}
   - {{ . }}
 {{- end }}
 
