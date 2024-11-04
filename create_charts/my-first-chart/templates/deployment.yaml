@@ -1,23 +1,5 @@
 apiVersion: apps/v1
 kind: Deployment
-{{ $myVar := .Values.autoscaling.enabled }}
-{{- if $myVar }}
-{{ "Hi, I am with Variable True" | nindent 4 }}
-{{- else }}
-{{ "Hi, I am with Variable False" | nindent 4 }}
-{{- end }}
-
-{{- with .Values.customBlock.author.name }}
-author:
-{{- toYaml . | nindent 4 }}
-# {{- else }}
-# {{"I am without Block" | nindent 4 }}
-{{- end }}
-
-author:
-{{- range .Values.customBlock.author.name }}
-  - {{ . }}
-{{- end }}
 
 {{- range $key,$value := .Values.image }}
   {{$key}}: {{$value | quote }}
