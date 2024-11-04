@@ -16,7 +16,7 @@ author:
 
 author:
 {{- range .Values.customBlock.author.name }}
-  - {{ . }}
+  {{ . }}
 {{- end }}
 
 {{- range $key,$value := .Values.image }}
