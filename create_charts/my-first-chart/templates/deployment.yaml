@@ -19,6 +19,10 @@ author:
   - {{ . }}
 {{- end }}
 
+{{- range $key,$value := .Values.image }}
+  {{$key}}: {{$value | quote }}
+{{- end }}
+
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
