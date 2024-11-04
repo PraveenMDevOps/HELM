@@ -14,11 +14,6 @@ author:
 # {{"I am without Block" | nindent 4 }}
 {{- end }}
 
-author:
-{{- range .Values.customBlock.author.name }}
-  {{ . }}
-{{- end }}
-
 {{- range $key,$value := .Values.image }}
   {{ $key }}: {{ $value }}
 {{- end }}
