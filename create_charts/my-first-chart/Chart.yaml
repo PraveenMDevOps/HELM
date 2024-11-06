@@ -35,7 +35,13 @@ dependencies:
   - name: mysql
     version: "11.1.20"
     repository: "https://charts.bitnami.com/bitnami"
+    condition: mysql.enabled
 
   - name: rabbitmq
     version: "15.0.5"
     repository: "https://charts.bitnami.com/bitnami"
+
+
+
+
+
